@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Submission Form</title>
+</head>
+<body>
+    <h2>Add Expense</h2>
+    <form action="/submit_expense" method="POST">
+        <label>Description:</label><br>
+        <input type="text" name="description" required><br><br>
+
+        <label>Amount (₹):</label><br>
+        <input type="number" name="amount" step="0.01" required><br><br>
+
+        <label>Date (YYYY-MM-DD):</label><br>
+        <input type="date" name="date" required><br><br>
+
+        <button type="submit">Submit Expense</button>
+    </form>
+</body>
+</html>

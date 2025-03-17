@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Split Result</title>
+</head>
+<body>
+    <h2>Expense Split Result</h2>
+    <ul>
+        {% for user, amount in result.items() %}
+            <li>{{ user }}: ₹{{ amount }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/split_form">← Back to Form</a>
+</body>
+</html>

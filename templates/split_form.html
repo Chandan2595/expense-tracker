@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Split Expense</title>
+</head>
+<body>
+    <h2>Split Expense</h2>
+    <form method="POST">
+        <label>Total Amount:</label><br>
+        <input type="number" name="total_amount" step="0.01" required><br><br>
+
+        <label>Users (Enter multiple names):</label><br>
+        <input type="text" name="users" required placeholder="Alice"><br>
+        <input type="text" name="users" placeholder="Bob"><br>
+        <input type="text" name="users" placeholder="Charlie"><br>
+        <input type="text" name="users" placeholder="Add more if needed"><br><br>
+
+        <button type="submit">Split</button>
+    </form>
+</body>
+</html>
